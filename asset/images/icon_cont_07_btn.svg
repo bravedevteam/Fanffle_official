@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="281" height="64" viewBox="0 0 281 64">
+    <defs>
+        <clipPath id="o9z3gzv6ea">
+            <path data-name="사각형 302" transform="translate(.447)" style="stroke:transparent;stroke-miterlimit:10;fill:#fff" d="M0 0h21v21H0z"/>
+        </clipPath>
+        <clipPath id="uu4g8jcx5b">
+            <path data-name="사각형 102" transform="translate(893.773 241.274)" style="stroke:transparent;stroke-miterlimit:10;fill:#fff" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 48774" transform="translate(-806 -345)">
+        <rect data-name="사각형 3950" width="281" height="64" rx="5" transform="translate(806 345)" style="fill:#030040"/>
+        <g data-name="그룹 23035">
+            <text transform="translate(923 385)" style="font-size:20px;font-family:SpoqaHanSans-Regular,SpoqaHanSans;letter-spacing:-.02em;fill:#fff"><tspan x="-54.2" y="0">팬플신청하기</tspan></text>
+            <g data-name="그룹 641" transform="translate(1032.553 367)" style="clip-path:url(#o9z3gzv6ea)">
+                <path data-name="패스 305" d="M980.568 783.888a.438.438 0 0 1-.31-.747l5.762-5.762a1.312 1.312 0 0 0 0-1.857l-5.762-5.762a.437.437 0 0 1 .619-.619l5.762 5.762a2.19 2.19 0 0 1 0 3.094l-5.762 5.762a.433.433 0 0 1-.309.129z" transform="translate(-973.206 -766.012)" style="stroke:transparent;stroke-miterlimit:10;fill:#fff"/>
+            </g>
+        </g>
+        <g data-name="그룹 185" transform="translate(-56.773 122.727)" style="clip-path:url(#uu4g8jcx5b)">
+            <g data-name="그룹 183">
+                <g data-name="그룹 181">
+                    <path data-name="패스 91" d="M898.812 262.727a2.5 2.5 0 0 1-2.467-2.855l.236-1.65a2.515 2.515 0 0 1 .707-1.414l12.257-12.256a2.5 2.5 0 0 1 3.535 0l1.414 1.414a2.5 2.5 0 0 1 0 3.535l-12.256 12.257a2.518 2.518 0 0 1-1.415.707l-1.649.236a2.6 2.6 0 0 1-.362.026zm12.5-17.907a1.494 1.494 0 0 0-1.061.439l-12.257 12.256a1.514 1.514 0 0 0-.424.849l-.236 1.65a1.5 1.5 0 0 0 1.7 1.7l1.65-.236a1.514 1.514 0 0 0 .849-.424l12.256-12.257a1.5 1.5 0 0 0 0-2.121l-1.414-1.414a1.491 1.491 0 0 0-1.062-.442z" style="stroke:transparent;stroke-miterlimit:10;fill:#fff"/>
+                </g>
+                <g data-name="그룹 182">
+                    <path data-name="사각형 101" transform="rotate(-45 751.828 -972.871)" style="stroke:transparent;stroke-miterlimit:10;fill:#fff" d="M0 0h1v6H0z"/>
+                </g>
+            </g>
+            <g data-name="그룹 184">
+                <path data-name="패스 92" d="M914.727 262.726h-8a.5.5 0 0 1 0-1h8a.5.5 0 0 1 0 1z" style="stroke:transparent;stroke-miterlimit:10;fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>
