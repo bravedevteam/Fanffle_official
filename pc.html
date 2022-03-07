@@ -11,7 +11,8 @@
 	<link rel="stylesheet" type="text/css" href="./asset/css/common.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">  
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+	
 </head>
 <body>
 	<div class="pc-wrap">
@@ -78,17 +79,18 @@
 						<ul>
 							<li>
 								<p>서비스를 이용중인 총 유저수</p>
-								<p>128,300+</p>
+								<p><span class="counter">128,300</span>+</p>
 							</li>
 							<li>
 								<p>발행한 NFT 총 수량</p>
-								<p>2,400+</p>
+								<p><span class="counter">2,400</span>+</p>
 							</li>
 							<li>
 								<p>팬플에서 거래중인 NFT의 총 가치</p>
-								<p>$ 2,350,000+</p>
+								<p>$ <span class="counter">2,350,000</span>+</p>
 							</li>
 						</ul>
+						<span class="bar"></span>
 					</div>
 				</div>
 				<div class="main-cont-05">
@@ -278,6 +280,8 @@
 		</footer>
 	</div>
 </body>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+	<script src="./asset/js/jquery.counterup.min.js"></script>
 <script>
 $(document).on("click" , ".select-box" , function(){
 	$(this).find("ul").slideToggle();;
@@ -339,5 +343,39 @@ var cont06 = new Swiper(".main-cont-06 .swiper-container", {
 		prevEl: ".main-cont-06 .swiper-button-prev",
 	},
 });
+
+var bar_w = [];
+var bar_p = [];
+$(".main-cont-04 ul li").each(function(){
+	var w = $(this).width();
+	var p = $(this).position().left;
+	bar_w.push(w);
+	bar_p.push(p);
+});
+
+
+function barMove(num){
+	$(".main-cont-04 .bar").css({
+		width: bar_w[num]+"px",
+		left: bar_p[num]+"px"
+	});
+
+	$(".main-cont-04 ul li span").removeClass("counter");
+	$(".main-cont-04 ul li:eq("+num+") span").addClass("counter");
+	$('.counter').counterUp({
+		delay: 10,
+		time: 1000
+	});
+}
+barMove(0);
+var setNum = 0;
+setInterval(function(){
+	if(setNum == 3){
+		setNum = 0;
+	}else{
+		setNum = setNum+1
+	}
+	barMove(setNum);
+}, 3000);
 </script>
 </html>
